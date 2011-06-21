@@ -50,6 +50,9 @@ Ext.onReady(function() {
         
         // layer sources
         sources: {
+			arcgiscache: {
+                ptype: "gxp_arcgiscachesource"
+            },
             mapbox: {
                 ptype: "gxp_mapboxsource"
             },
@@ -68,7 +71,7 @@ Ext.onReady(function() {
             center: [0, 0],
             zoom: 1,
             layers: [{
-                source: "mapbox",
+                source: "arcgiscache",
                 name: "blue-marble-topo-bathy-jan",
                 group: "background"
             }],
